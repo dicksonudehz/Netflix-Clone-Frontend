@@ -27,7 +27,7 @@ export default React.memo(function Card({ index, movieData, isLiked = false }) {
 
   const addToList = async () => {
     try {
-      await axios.post("http://localhost:6700/api/user/add", {
+      await axios.post("https://netflix-clone-backend-smoky.vercel.app/api/user/add", {
         email,
         data: movieData,
       });

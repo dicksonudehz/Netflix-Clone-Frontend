@@ -40,6 +40,7 @@ export default function UserListedMovies() {
       dispatch(getUsersLikedMovies(email));
     }
   }, [email, dispatch]);
+  console.log(getUsersLikedMovies)
 
   // window.onscroll = () => {
   //   setIsScrolled(window.pageYOffset === 0 ? false : true);

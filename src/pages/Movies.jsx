@@ -44,6 +44,7 @@ function MoviePage() {
       } else {
         navigate("/login");
       }
+      console.log(currentUser)
     });
 
     return () => unsubscribe();
